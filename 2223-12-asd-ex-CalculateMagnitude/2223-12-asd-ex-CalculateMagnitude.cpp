@@ -5,8 +5,10 @@
 using namespace std;
 
 int calc(int a, int b) {
-    // write your code her
-    return 0;
+    if (b != 0)
+        return (a * calc(a, b - 1));
+    else
+        return 1;
 }
 
 int main()
